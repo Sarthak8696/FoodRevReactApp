@@ -1,0 +1,51 @@
+@import 'src/common/colorPalette.scss';
+@import "../../common/mixin.scss";
+
+.vendor-signup-container {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 0 10%;
+    height: fit-content;
+
+    @include breakpoint(small) {
+        @include login-signup-cntainer;
+    }
+
+    .vendor-signup {
+        &-heading {
+            text-align: center;
+            font-size: 50px;
+            color: $secondary-color;
+            margin-top: 0;
+            padding-top: 25px;
+
+            @include breakpoint(small) {
+                padding-top: 50px;
+                font-size: 40px;
+            }
+        }
+
+        &-subheading {
+            border-bottom: 1px solid $secondary-color;
+            color: $secondary-color;
+            font-size: 30px;
+            text-align: center;
+            padding-bottom: 30px;
+
+            @include breakpoint(small) {
+                padding-top: 50px;
+                font-size: 39px;
+            }
+        }
+
+        &-form-subheading {
+            color: $secondary-color;
+            font-size: 17px;
+            text-align: center;
+
+            @include breakpoint(small) {
+                font-size: 22px;
+            }
+        }
+    }
+}

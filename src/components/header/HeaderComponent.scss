@@ -1,0 +1,80 @@
+@import "../../common/mixin.scss";
+@import '../../common/colorPalette.scss';
+
+#header {
+    background-color: #e66f6f;
+    height: 65px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    @include breakpoint(medium) {
+        height: 80px;
+    }
+}
+
+.hamburger-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
+    width: 35px;
+    margin: 13px 0 0 20px;
+    transform: rotate(0deg);
+
+    @include breakpoint(medium) {
+        margin: 20px 0 0 50px;
+    }
+
+    span {
+        border-radius: 10px;
+        display: block;
+        width: 35px;
+        height: 5px;
+        position: absolute;
+        background-color: white;
+        margin: 7px 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        transform-origin: left center;
+    }
+
+    .hamburger-icon-1 {
+        top: 0;
+        
+        &.close-icon {
+            transform: rotate(43deg);
+        }
+    }
+
+    .hamburger-icon-2 {
+        top: 12px;
+
+        &.close-icon {
+            width: 0%;
+            opacity: 0;
+        }
+    }
+
+    .hamburger-icon-3 {
+        top: 24px;
+
+        &.close-icon {
+            transform: rotate(-43deg);
+        }
+    }  
+}
+
+.header-logo {
+    color: $logo-color;
+    cursor: pointer;
+    position: relative;
+    bottom: 15px;
+    font-size: 35px;
+    left: 20%;
+
+    @include breakpoint(medium) {
+        font-size: 45px;
+        left: 40%;
+    }
+}

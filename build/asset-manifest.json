@@ -1,0 +1,14 @@
+{
+  "main.css": "/myapp/static/css/main.b6b6151f.chunk.css",
+  "main.js": "/myapp/static/js/main.3c41ccd5.chunk.js",
+  "main.js.map": "/myapp/static/js/main.3c41ccd5.chunk.js.map",
+  "runtime~main.js": "/myapp/static/js/runtime~main.e4f53ea3.js",
+  "runtime~main.js.map": "/myapp/static/js/runtime~main.e4f53ea3.js.map",
+  "static/js/2.727ef5cc.chunk.js": "/myapp/static/js/2.727ef5cc.chunk.js",
+  "static/js/2.727ef5cc.chunk.js.map": "/myapp/static/js/2.727ef5cc.chunk.js.map",
+  "index.html": "/myapp/index.html",
+  "precache-manifest.2c02d0ffd83a71a2e31c9d3b4335d9f3.js": "/myapp/precache-manifest.2c02d0ffd83a71a2e31c9d3b4335d9f3.js",
+  "service-worker.js": "/myapp/service-worker.js",
+  "static/css/main.b6b6151f.chunk.css.map": "/myapp/static/css/main.b6b6151f.chunk.css.map",
+  "static/media/styles.scss": "/myapp/static/media/RegistrationSignInBackground.f539ba29.png"
+}

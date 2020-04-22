@@ -1,0 +1,15 @@
+@import 'src/common/colorPalette.scss';
+
+.checkbox {
+    margin-right: 7px;
+    padding: 10px;
+    width: 19px;
+    height: 19px;
+
+    &-label {
+        margin: 20px;
+        display: block;
+        color: $secondary-color;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,37 @@
+@import "../../common/mixin.scss";
+@import "src/common/colorPalette.scss";
+
+.menu {
+    transition: 400ms ease-in-out;
+    transform: translateX(-260px);
+    width: 250px;
+    top: 65px;
+    height: 100%;
+    position: fixed;
+    box-shadow: inset -8px 8px 20px -10px black;
+    background-color: $secondary-color;
+
+    &.open {
+        transform: translateX(0);
+    }
+
+    @include breakpoint(medium) {
+        transform: translateX(-360px);
+        width: 350px;
+        top: 80px;
+    }
+
+    .menu-header {
+        padding: 25px 0;
+        margin: 0 50px;
+        font-size: 20px;
+        text-align: center;
+        color: white;
+        border-bottom: 3px solid white;
+
+        @include breakpoint(medium) {
+            font-size: 22px;
+            margin: 0 60px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import "src/common/colorPalette.scss";
+@import "../../common/mixin.scss";
+
+.login-panel {
+    background-color: $secondary-color;
+}
+
+.login-container {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 0 10%;
+    height: fit-content;
+
+    @include breakpoint(small) {
+        @include login-signup-cntainer;
+    }
+
+
+    .login {
+        &-heading {
+            text-align: center;
+            font-size: 50px;
+            color: $secondary-color;
+            margin-top: 0;
+            padding-top: 25px;
+
+            @include breakpoint(small) {
+                padding-top: 50px;
+                font-size: 40px;
+            }
+        }
+
+        &-subheading {
+            text-align: center;
+            font-size: 30px;
+            color: $secondary-color;
+
+            @include breakpoint(small) {
+                padding-top: 50px;
+                font-size: 40px;
+            }
+        }
+
+        &-forgot-password {
+            display: none;
+            text-decoration: none;
+            color: $secondary-color;
+            font-size: 20px;
+        }
+
+        &-sign-up {
+            &-heading {
+                margin-top: 25px;
+                font-weight: bold;
+                color: $secondary-color;
+                font-size: 30px;
+            }
+
+            &-user {
+                color: $secondary-color;
+                font-size: 20px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            &-vendor {
+                color: $secondary-color;
+                font-size: 20px;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .sign-in-checkbox {
+        display: block;
+        text-align: center;
+    }
+}
